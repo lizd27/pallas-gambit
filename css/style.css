@@ -1,0 +1,30 @@
+*{box-sizing:border-box}
+body{margin:0;background:var(--ceramic);color:var(--marble);font:1rem/1.6 var(--font-body)}
+h1,h2,h3{font-family:var(--font-head);font-weight:400;line-height:1.2}
+h1{font-size:2.4rem;color:var(--gold)}h2{font-size:1.7rem}h3{font-size:1.2rem}
+a{color:var(--link)}a:hover{color:var(--gold)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--gold);color:var(--ceramic);padding:.5rem;z-index:9}
+header{border-bottom:1px solid var(--gold);padding:.75rem 1.5rem}
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:1rem}
+.logo{font:1.5rem var(--font-head);color:var(--gold);text-decoration:none}
+nav ul{display:flex;flex-wrap:wrap;gap:1rem;list-style:none;margin:0;padding:0}
+nav a{color:var(--marble);text-decoration:none;padding:.4rem .2rem}
+nav a:hover,nav a[aria-current=page]{color:var(--gold);border-bottom:2px solid var(--gold)}
+main{max-width:60rem;margin:0 auto;padding:1.5rem}
+section,aside{margin-bottom:2rem}
+aside,.card{background:var(--panel);border:1px solid var(--gold);border-radius:8px;padding:1rem 1.25rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem}
+.btn{display:inline-block;background:var(--gold);color:var(--ceramic);border:0;border-radius:6px;padding:.7rem 1.2rem;font:inherit;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--gold-dark);color:var(--ceramic)}
+.quote{font-family:var(--font-accent);font-style:italic}
+fieldset{border:1px solid var(--aegean);border-radius:8px;margin-bottom:1rem}
+select,input{font:inherit;padding:.4rem}
+.board{aspect-ratio:1;max-width:28rem;background:conic-gradient(#4A5A6A 25%,#E8E0CC 0 50%,#4A5A6A 0 75%,#E8E0CC 0) 0 0/25% 25%;border:3px solid var(--gold);display:grid;place-items:center;color:var(--ceramic)}
+.game{display:grid;grid-template-columns:minmax(0,28rem) 1fr;gap:1.5rem}
+@media(max-width:48rem){.game{grid-template-columns:1fr}}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--aegean);padding:.4rem;text-align:left}
+footer{border-top:1px solid var(--gold);padding:1rem 1.5rem;text-align:center;font-size:.9rem}
+.logo-img{display:block;max-width:100%;height:auto;border-radius:8px;margin:1rem 0}
+.card img{display:block;margin-bottom:.5rem}
+ul,ol{padding-left:1.5rem}

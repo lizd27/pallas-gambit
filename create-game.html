@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pallas’ Gambit: онлайн-шахи у світі давньогрецької міфології.">
+  <title>Створити партію | Pallas’ Gambit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Inter&family=Philosopher:ital@1&display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Перейти до основного вмісту</a>
+  <header>
+    <div class="top">
+      <a class="logo" href="index.html">Pallas’ Gambit</a>
+      <nav aria-label="Головне меню">
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="create-game.html" aria-current="page">Створити партію</a></li>
+        <li><a href="game.html">Гра</a></li>
+        <li><a href="learn.html">Навчання</a></li>
+        <li><a href="level.html">Рівень</a></li>
+        <li><a href="heroes.html">Герої</a></li>
+        <li><a href="progress.html">Мій прогрес</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <h1>Нова партія</h1>
+    <form action="game.html" method="get">
+      <fieldset><legend>Суперник</legend>
+        <p><input type="radio" id="m-friend" name="mode" value="friend" checked> <label for="m-friend">Друг за посиланням</label></p>
+        <p><input type="radio" id="m-bot" name="mode" value="bot"> <label for="m-bot">Бот</label></p>
+      </fieldset>
+      <fieldset><legend>Колір фігур</legend>
+        <p><input type="radio" id="c-white" name="color" value="white" checked> <label for="c-white">Білі</label></p>
+        <p><input type="radio" id="c-black" name="color" value="black"> <label for="c-black">Чорні</label></p>
+        <p><input type="radio" id="c-rand" name="color" value="random"> <label for="c-rand">Випадково</label></p>
+      </fieldset>
+      <p><label for="time">Час на партію</label><br>
+        <select id="time" name="time"><option>3 хвилини</option><option selected>10 хвилин</option><option>30 хвилин</option></select></p>
+      <button class="btn" type="submit">Створити партію</button>
+    </form>
+    <section aria-labelledby="link-h"><h2 id="link-h">Посилання для друга</h2>
+      <p>Після створення партії тут з’явиться посилання, яке можна скопіювати й надіслати.</p></section>
+  </main>
+  <footer>
+    <p>Pallas’ Gambit: онлайн-шахи у світі давньогрецької міфології. Зв’язок: <a href="mailto:lizademed@gmail.com">lizademed@gmail.com</a></p>
+    <nav aria-label="Додаткове меню"><a href="404.html">Сторінка помилки</a></nav>
+  </footer>
+</body>
+</html>
