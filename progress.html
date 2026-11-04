@@ -3,20 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pallas’ Gambit: онлайн-шахи у світі давньогрецької міфології.">
+  <meta name="description" content="Ваш прогрес навчання, відкриті довідки, історія партій і налаштування.">
   <title>Мій прогрес | Pallas’ Gambit</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Inter&family=Philosopher:ital@1&display=swap">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Перейти до основного вмісту</a>
+  <a href="#main">Перейти до основного вмісту</a>
   <header>
-    <div class="top">
-      <a class="logo" href="index.html">Pallas’ Gambit</a>
-      <nav aria-label="Головне меню">
+    <p><a href="index.html">Pallas’ Gambit</a></p>
+    <p>Кожна партія варта міфу</p>
+    <nav aria-label="Головне меню">
       <ul>
         <li><a href="index.html">Головна</a></li>
         <li><a href="create-game.html">Створити партію</a></li>
@@ -26,22 +21,97 @@
         <li><a href="heroes.html">Герої</a></li>
         <li><a href="progress.html" aria-current="page">Мій прогрес</a></li>
       </ul>
-      </nav>
-    </div>
+    </nav>
   </header>
   <main id="main">
     <h1>Мій прогрес</h1>
-    <p>Дані зберігаються у вашому браузері.</p>
-    <section aria-labelledby="p1"><h2 id="p1">Навчання</h2><p>Пройдено подвигів: 0 з 12. <a href="learn.html">Почати навчання</a></p></section>
-    <section aria-labelledby="p2"><h2 id="p2">Історія партій</h2>
-      <table><caption>Зіграні партії</caption>
-        <thead><tr><th scope="col">Дата</th><th scope="col">Суперник</th><th scope="col">Результат</th></tr></thead>
-        <tbody><tr><td colspan="3">Партій поки немає. <a href="create-game.html">Створити партію</a></td></tr></tbody>
-      </table></section>
+    <p>Дані зберігаються у вашому браузері й не передаються на сервер.</p>
+
+    <section aria-labelledby="learn-h">
+      <h2 id="learn-h">Навчання</h2>
+      <p><label for="learn-bar">Пройдено подвигів: 0 з 12</label></p>
+      <progress id="learn-bar" value="0" max="12">0 з 12</progress>
+      <table>
+        <caption>Стан подвигів Геракла</caption>
+        <thead><tr><th scope="col">№</th><th scope="col">Подвиг</th><th scope="col">Стан</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">1</th><td>Немейський лев</td><td>Відкрито</td></tr>
+          <tr><th scope="row">2</th><td>Лернейська гідра</td><td>Закрито</td></tr>
+          <tr><th scope="row">3</th><td>Керинейська лань</td><td>Закрито</td></tr>
+          <tr><th scope="row">4</th><td>Еріманфський вепр</td><td>Закрито</td></tr>
+          <tr><th scope="row">5</th><td>Авгієві стайні</td><td>Закрито</td></tr>
+          <tr><th scope="row">6</th><td>Стимфалійські птахи</td><td>Закрито</td></tr>
+          <tr><th scope="row">7</th><td>Критський бик</td><td>Закрито</td></tr>
+          <tr><th scope="row">8</th><td>Коні Діомеда</td><td>Закрито</td></tr>
+          <tr><th scope="row">9</th><td>Пояс Іполіти</td><td>Закрито</td></tr>
+          <tr><th scope="row">10</th><td>Корови Геріона</td><td>Закрито</td></tr>
+          <tr><th scope="row">11</th><td>Яблука Гесперид</td><td>Закрито</td></tr>
+          <tr><th scope="row">12</th><td>Кербер</td><td>Закрито</td></tr>
+        </tbody>
+      </table>
+      <p><a href="learn.html">Продовжити навчання</a></p>
+    </section>
+
+    <section aria-labelledby="refs">
+      <h2 id="refs">Відкриті довідки</h2>
+      <p>Поки відкрито 0 з 13 довідок (5 головних фігур і 8 героїв-пішаків).</p>
+      <ul>
+        <li>Довідок поки немає. Зіграйте партію або пройдіть перший подвиг.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="hist">
+      <h2 id="hist">Історія партій</h2>
+      <table>
+        <caption>Зіграні партії</caption>
+        <thead><tr><th scope="col">Дата</th><th scope="col">Суперник</th><th scope="col">Колір</th><th scope="col">Результат</th><th scope="col">Партія</th></tr></thead>
+        <tbody>
+          <tr><td colspan="5">Партій поки немає. <a href="create-game.html">Створити партію</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="settings">
+      <h2 id="settings">Налаштування</h2>
+      <form action="progress.html" method="get">
+        <p>
+          <label for="lang">Мова інтерфейсу</label><br>
+          <select id="lang" name="lang">
+            <option value="uk" selected>Українська</option>
+            <option value="en">English</option>
+          </select>
+        </p>
+        <p><input type="checkbox" id="sound" name="sound" checked> <label for="sound">Звукові ефекти</label></p>
+        <p><input type="checkbox" id="moves-hint" name="moves-hint"> <label for="moves-hint">Підсвічувати можливі ходи</label></p>
+        <p><button type="submit">Зберегти налаштування</button></p>
+      </form>
+    </section>
+
+    <section aria-labelledby="reset-h">
+      <h2 id="reset-h">Скинути дані</h2>
+      <p>Увесь прогрес і історію партій буде видалено з цього браузера без можливості відновлення.</p>
+      <p><button type="button">Скинути прогрес</button></p>
+    </section>
   </main>
   <footer>
-    <p>Pallas’ Gambit: онлайн-шахи у світі давньогрецької міфології. Зв’язок: <a href="mailto:lizademed@gmail.com">lizademed@gmail.com</a></p>
-    <nav aria-label="Додаткове меню"><a href="404.html">Сторінка помилки</a></nav>
+    <nav aria-label="Карта сайту">
+      <h2>Сторінки сайту</h2>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="create-game.html">Створити партію</a></li>
+        <li><a href="game.html">Гра</a></li>
+        <li><a href="learn.html">Навчання</a></li>
+        <li><a href="level.html">Рівень</a></li>
+        <li><a href="heroes.html">Герої</a></li>
+        <li><a href="progress.html">Мій прогрес</a></li>
+        <li><a href="404.html">Сторінка помилки</a></li>
+      </ul>
+    </nav>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Контакти</h2>
+      <address>Зв’язок з автором: <a href="mailto:lizademed@gmail.com">lizademed@gmail.com</a></address>
+    </section>
+    <p><small>© 2026 Pallas’ Gambit. Навчальний проєкт.</small></p>
   </footer>
 </body>
 </html>

@@ -3,20 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pallas’ Gambit: онлайн-шахи у світі давньогрецької міфології.">
+  <meta name="description" content="Довідник героїв Pallas’ Gambit: міфологічні персонажі, які стоять на шаховій дошці.">
   <title>Герої | Pallas’ Gambit</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Inter&family=Philosopher:ital@1&display=swap">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Перейти до основного вмісту</a>
+  <a href="#main">Перейти до основного вмісту</a>
   <header>
-    <div class="top">
-      <a class="logo" href="index.html">Pallas’ Gambit</a>
-      <nav aria-label="Головне меню">
+    <p><a href="index.html">Pallas’ Gambit</a></p>
+    <p>Кожна партія варта міфу</p>
+    <nav aria-label="Головне меню">
       <ul>
         <li><a href="index.html">Головна</a></li>
         <li><a href="create-game.html">Створити партію</a></li>
@@ -26,23 +21,105 @@
         <li><a href="heroes.html" aria-current="page">Герої</a></li>
         <li><a href="progress.html">Мій прогрес</a></li>
       </ul>
-      </nav>
-    </div>
+    </nav>
   </header>
   <main id="main">
     <h1>Герої на дошці</h1>
-    <div class="cards">
-      <article class="card"><img src="images/pieces/piece-king.svg" alt="Силует фігури: король (Зевс)" width="64" height="64" loading="lazy"><h2>Зевс</h2><p><strong>Король.</strong> Володар богів. Його втрата завершує гру.</p></article>
-      <article class="card"><img src="images/pieces/piece-queen.svg" alt="Силует фігури: ферзь (Афіна)" width="64" height="64" loading="lazy"><h2>Афіна</h2><p><strong>Ферзь.</strong> Богиня мудрості й справедливої війни.</p></article>
-      <article class="card"><img src="images/pieces/piece-rook.svg" alt="Силует фігури: тура (Атлант)" width="64" height="64" loading="lazy"><h2>Атлант</h2><p><strong>Тура.</strong> Титан, що тримає небесне склепіння.</p></article>
-      <article class="card"><img src="images/pieces/piece-bishop.svg" alt="Силует фігури: слон (Аполлон)" width="64" height="64" loading="lazy"><h2>Аполлон</h2><p><strong>Слон.</strong> Бог світла, його стріла летить по діагоналі.</p></article>
-      <article class="card"><img src="images/pieces/piece-knight.svg" alt="Силует фігури: кінь (Пегас)" width="64" height="64" loading="lazy"><h2>Пегас</h2><p><strong>Кінь.</strong> Крилатий кінь, що перестрибує перешкоди.</p></article>
-      <article class="card"><img src="images/pieces/piece-pawn.svg" alt="Силует фігури: пішаки (Геракл та інші)" width="64" height="64" loading="lazy"><h2>Геракл та інші</h2><p><strong>Пішаки.</strong> Герої, які йдуть уперед крок за кроком.</p></article>
-    </div>
+    <p>У Pallas’ Gambit кожна шахова фігура має свого міфологічного персонажа. Нижче коротко про кожного з них і про його роль у грі.</p>
+
+    <section aria-labelledby="main-pieces">
+      <h2 id="main-pieces">Головні фігури</h2>
+      <article>
+        <h3>Зевс</h3>
+        <img src="images/pieces/piece-king.svg" alt="Силует фігури: король (Зевс)" width="64" height="64" loading="lazy">
+        <p><strong>Король.</strong> Володар богів і людей. Живе на горі Олімп. Його влада безперечна, але втрата короля завершує партію.</p>
+      </article>
+      <article>
+        <h3>Афіна</h3>
+        <img src="images/pieces/piece-queen.svg" alt="Силует фігури: ферзь (Афіна)" width="64" height="64" loading="lazy">
+        <p><strong>Ферзь.</strong> Богиня мудрості й справедливої війни, народжена з голови Зевса в обладунку. Перемагає розрахунком, тому веде найсильнішу фігуру на дошці.</p>
+      </article>
+      <article>
+        <h3>Атлант</h3>
+        <img src="images/pieces/piece-rook.svg" alt="Силует фігури: тура (Атлант)" width="64" height="64" loading="lazy">
+        <p><strong>Тура.</strong> Титан, якого Зевс покарав тримати небесне склепіння. Тура так само стоїть міцно й контролює лінії дошки.</p>
+      </article>
+      <article>
+        <h3>Аполлон</h3>
+        <img src="images/pieces/piece-bishop.svg" alt="Силует фігури: слон (Аполлон)" width="64" height="64" loading="lazy">
+        <p><strong>Слон.</strong> Бог світла, мистецтв і стрільби з лука. Слон, як його стріла, летить по діагоналі.</p>
+      </article>
+      <article>
+        <h3>Пегас</h3>
+        <img src="images/pieces/piece-knight.svg" alt="Силует фігури: кінь (Пегас)" width="64" height="64" loading="lazy">
+        <p><strong>Кінь.</strong> Крилатий кінь, народжений із крові Медузи Горгони. Єдина фігура, яка перестрибує інші.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="pawns">
+      <h2 id="pawns">Пішаки: герої Давньої Греції</h2>
+      <article>
+        <h3>Вісім героїв, вісім пішаків</h3>
+        <img src="images/pieces/piece-pawn.svg" alt="Силует фігури: пішак" width="64" height="64" loading="lazy">
+        <p>Вісім пішаків — вісім героїв. Кожен із них починає шлях на другій горизонталі й мріє дійти до кінця дошки, щоб перетворитися на ферзя.</p>
+      </article>
+      <dl>
+        <dt>Геракл</dt>
+        <dd>Найсильніший із героїв, виконав дванадцять подвигів.</dd>
+        <dt>Персей</dt>
+        <dd>Переміг Медузу Горгону й врятував Андромеду.</dd>
+        <dt>Ахілл</dt>
+        <dd>Найкращий воїн Троянської війни, відомий вразливою п’ятою.</dd>
+        <dt>Одіссей</dt>
+        <dd>Хитромудрий цар Ітаки, автор ідеї дерев’яного коня.</dd>
+        <dt>Тесей</dt>
+        <dd>Афінський герой, що переміг Мінотавра в Лабіринті.</dd>
+        <dt>Ясон</dt>
+        <dd>Привіз Золоте руно на кораблі «Арго».</dd>
+        <dt>Діомед</dt>
+        <dd>Один із найвідважніших героїв Троянської війни.</dd>
+        <dt>Орфей</dt>
+        <dd>Співак і музикант, який спустився в царство мертвих по Еврідіку.</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="summary">
+      <h2 id="summary">Таблиця відповідності</h2>
+      <table>
+        <caption>Фігури та їхні міфологічні персонажі</caption>
+        <thead><tr><th scope="col">Фігура</th><th scope="col">Персонаж</th><th scope="col">Роль у міфі</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Король</th><td>Зевс</td><td>володар богів</td></tr>
+          <tr><th scope="row">Ферзь</th><td>Афіна</td><td>богиня мудрості</td></tr>
+          <tr><th scope="row">Тура</th><td>Атлант</td><td>титан, що тримає небо</td></tr>
+          <tr><th scope="row">Слон</th><td>Аполлон</td><td>бог світла</td></tr>
+          <tr><th scope="row">Кінь</th><td>Пегас</td><td>крилатий кінь</td></tr>
+          <tr><th scope="row">Пішак</th><td>Геракл та інші герої</td><td>відважні подорожні</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <p><a href="learn.html">Познайомитися з героями ближче через навчання</a></p>
   </main>
   <footer>
-    <p>Pallas’ Gambit: онлайн-шахи у світі давньогрецької міфології. Зв’язок: <a href="mailto:lizademed@gmail.com">lizademed@gmail.com</a></p>
-    <nav aria-label="Додаткове меню"><a href="404.html">Сторінка помилки</a></nav>
+    <nav aria-label="Карта сайту">
+      <h2>Сторінки сайту</h2>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="create-game.html">Створити партію</a></li>
+        <li><a href="game.html">Гра</a></li>
+        <li><a href="learn.html">Навчання</a></li>
+        <li><a href="level.html">Рівень</a></li>
+        <li><a href="heroes.html">Герої</a></li>
+        <li><a href="progress.html">Мій прогрес</a></li>
+        <li><a href="404.html">Сторінка помилки</a></li>
+      </ul>
+    </nav>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Контакти</h2>
+      <address>Зв’язок з автором: <a href="mailto:lizademed@gmail.com">lizademed@gmail.com</a></address>
+    </section>
+    <p><small>© 2026 Pallas’ Gambit. Навчальний проєкт.</small></p>
   </footer>
 </body>
 </html>

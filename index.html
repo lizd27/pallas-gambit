@@ -3,20 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pallas’ Gambit: онлайн-шахи у світі давньогрецької міфології.">
+  <meta name="description" content="Pallas’ Gambit: онлайн-шахи у світі давньогрецької міфології. Гра за посиланням, навчання через сюжет, довідник героїв.">
   <title>Головна | Pallas’ Gambit</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Inter&family=Philosopher:ital@1&display=swap">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Перейти до основного вмісту</a>
+  <a href="#main">Перейти до основного вмісту</a>
   <header>
-    <div class="top">
-      <a class="logo" href="index.html">Pallas’ Gambit</a>
-      <nav aria-label="Головне меню">
+    <p><a href="index.html">Pallas’ Gambit</a></p>
+    <p>Кожна партія варта міфу</p>
+    <nav aria-label="Головне меню">
       <ul>
         <li><a href="index.html" aria-current="page">Головна</a></li>
         <li><a href="create-game.html">Створити партію</a></li>
@@ -26,38 +21,112 @@
         <li><a href="heroes.html">Герої</a></li>
         <li><a href="progress.html">Мій прогрес</a></li>
       </ul>
-      </nav>
-    </div>
+    </nav>
   </header>
   <main id="main">
-    <section>
-      <h1>Кожна партія варта міфу</h1>
+    <section aria-labelledby="hero">
+      <h1 id="hero">Pallas’ Gambit: кожна партія варта міфу</h1>
       <picture>
-      <source srcset="images/logo/logo-full.webp" type="image/webp">
-      <img class="logo-img" src="images/logo/logo-full.png" alt="Логотип Pallas’ Gambit: сова з шаховими фігурами в оці" width="240" height="240">
+        <source srcset="images/logo/logo-full.webp" type="image/webp">
+        <img src="images/logo/logo-full.png" alt="Логотип Pallas’ Gambit: сова з шаховими фігурами в оці" width="240" height="240">
       </picture>
-      <p>Грайте в шахи з друзями за посиланням, проходьте подвиги Геракла й знайомтеся з героями, які стоять на дошці.</p>
-      <p><a class="btn" href="create-game.html">Грати</a> <a href="learn.html">Почати подвиги</a></p>
+      <p>Онлайн-шахи, у яких фігури стають героями давньогрецьких міфів. Грайте з друзями за посиланням, проходьте подвиги Геракла й дізнавайтеся, хто стоїть на вашій дошці.</p>
+      <p><a href="create-game.html">Грати зараз</a> | <a href="learn.html">Почати подвиги</a></p>
     </section>
-    <section aria-labelledby="why">
-      <h2 id="why">Що тут можна робити</h2>
-      <div class="cards">
-        <article class="card"><h3>Гра за посиланням</h3><p>Створіть партію й надішліть посилання другові. Реєстрація не потрібна.</p></article>
-        <article class="card"><h3>Навчання через сюжет</h3><p>Розв’язуйте шахові задачі в 12 подвигах Геракла й відкривайте міфи.</p></article>
-        <article class="card"><h3>Герої замість фігур</h3><p>Зевс, Афіна, Пегас та інші мають власні довідки про свою роль на дошці.</p></article>
-      </div>
+
+    <section aria-labelledby="features">
+      <h2 id="features">Що тут можна робити</h2>
+      <article>
+        <h3>Грати з другом за посиланням</h3>
+        <p>Створіть партію, надішліть посилання другові й починайте. Реєстрація не потрібна.</p>
+      </article>
+      <article>
+        <h3>Грати проти бота</h3>
+        <p>Немає з ким зіграти? Оберіть рівень складності й тренуйтеся самі.</p>
+      </article>
+      <article>
+        <h3>Вчитися через сюжет</h3>
+        <p>Розв’язуйте шахові задачі в серії «12 подвигів Геракла» й відкривайте міфи.</p>
+      </article>
+      <article>
+        <h3>Знайомитися з героями</h3>
+        <p>Зевс, Афіна, Атлант, Аполлон, Пегас і герої-пішаки мають власні довідки.</p>
+      </article>
     </section>
-    <section aria-labelledby="who"><h2 id="who">Для кого платформа</h2>
+
+    <section aria-labelledby="how">
+      <h2 id="how">Як почати</h2>
+      <ol>
+        <li>Відкрийте сторінку <a href="create-game.html">«Створити партію»</a>.</li>
+        <li>Оберіть суперника, колір фігур і час на партію.</li>
+        <li>Скопіюйте посилання й надішліть другові.</li>
+        <li>Грайте й читайте міфологічні довідки про фігури під час гри.</li>
+        <li>Перегляньте свій прогрес на сторінці <a href="progress.html">«Мій прогрес»</a>.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="pieces">
+      <h2 id="pieces">Герої на дошці</h2>
+      <p>Кожна фігура має свого міфологічного персонажа:</p>
       <ul>
-        <li>Школярі, які вчаться грати.</li>
-        <li>Студенти, яким потрібна швидка партія з другом.</li>
-        <li>Любителі міфології, які хочуть дізнатися більше про героїв.</li>
-      </ul></section>
-    <aside><p class="quote">Розум сильніший за силу.</p></aside>
+        <li>король: Зевс;</li>
+        <li>ферзь: Афіна;</li>
+        <li>тура: Атлант;</li>
+        <li>слон: Аполлон;</li>
+        <li>кінь: Пегас;</li>
+        <li>пішаки: Геракл, Персей, Ахілл, Одіссей, Тесей, Ясон, Діомед і Орфей.</li>
+      </ul>
+      <p><a href="heroes.html">Дізнатися більше про героїв</a></p>
+    </section>
+
+    <section aria-labelledby="who">
+      <h2 id="who">Для кого платформа</h2>
+      <ul>
+        <li><strong>Школярі та підлітки:</strong> вчаться грати через яскравий сюжет.</li>
+        <li><strong>Студенти й молоді дорослі:</strong> швидка партія з другом без реєстрації.</li>
+        <li><strong>Любителі міфології:</strong> знайомляться з героями, граючи.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">Часті запитання</h2>
+      <details>
+        <summary>Чи потрібна реєстрація?</summary>
+        <p>Ні. Щоб зіграти партію, достатньо створити її й надіслати посилання.</p>
+      </details>
+      <details>
+        <summary>Де зберігається мій прогрес?</summary>
+        <p>У вашому браузері. Якщо очистити дані браузера або змінити пристрій, прогрес буде втрачено.</p>
+      </details>
+      <details>
+        <summary>Чи можна грати проти комп’ютера?</summary>
+        <p>Так, на сторінці створення партії оберіть режим «Бот» і рівень складності.</p>
+      </details>
+    </section>
+
+    <aside aria-label="Девіз платформи">
+      <blockquote><p>Розум сильніший за силу.</p></blockquote>
+    </aside>
   </main>
   <footer>
-    <p>Pallas’ Gambit: онлайн-шахи у світі давньогрецької міфології. Зв’язок: <a href="mailto:lizademed@gmail.com">lizademed@gmail.com</a></p>
-    <nav aria-label="Додаткове меню"><a href="404.html">Сторінка помилки</a></nav>
+    <nav aria-label="Карта сайту">
+      <h2>Сторінки сайту</h2>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="create-game.html">Створити партію</a></li>
+        <li><a href="game.html">Гра</a></li>
+        <li><a href="learn.html">Навчання</a></li>
+        <li><a href="level.html">Рівень</a></li>
+        <li><a href="heroes.html">Герої</a></li>
+        <li><a href="progress.html">Мій прогрес</a></li>
+        <li><a href="404.html">Сторінка помилки</a></li>
+      </ul>
+    </nav>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Контакти</h2>
+      <address>Зв’язок з автором: <a href="mailto:lizademed@gmail.com">lizademed@gmail.com</a></address>
+    </section>
+    <p><small>© 2026 Pallas’ Gambit. Навчальний проєкт.</small></p>
   </footer>
 </body>
 </html>

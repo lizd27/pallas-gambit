@@ -3,20 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pallas’ Gambit: онлайн-шахи у світі давньогрецької міфології.">
+  <meta name="description" content="Екран шахової партії: дошка, годинники, список ходів, керування та міфологічна довідка про фігуру.">
   <title>Гра | Pallas’ Gambit</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Inter&family=Philosopher:ital@1&display=swap">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Перейти до основного вмісту</a>
+  <a href="#main">Перейти до основного вмісту</a>
   <header>
-    <div class="top">
-      <a class="logo" href="index.html">Pallas’ Gambit</a>
-      <nav aria-label="Головне меню">
+    <p><a href="index.html">Pallas’ Gambit</a></p>
+    <p>Кожна партія варта міфу</p>
+    <nav aria-label="Головне меню">
       <ul>
         <li><a href="index.html">Головна</a></li>
         <li><a href="create-game.html">Створити партію</a></li>
@@ -26,29 +21,102 @@
         <li><a href="heroes.html">Герої</a></li>
         <li><a href="progress.html">Мій прогрес</a></li>
       </ul>
-      </nav>
-    </div>
+    </nav>
   </header>
   <main id="main">
     <h1>Партія</h1>
-    <div class="game">
-      <div role="group" aria-label="Шахова дошка">
-        <p>Гість (чорні) <time datetime="PT11S">0:11</time></p>
-        <div class="board" role="img" aria-label="Шахова дошка, місце для гри"><span>Тут буде дошка</span></div>
-        <p>Гість (білі) <time datetime="PT1M45S">1:45</time></p>
-      </div>
-    <div>
-        <section aria-labelledby="moves"><h2 id="moves">Ходи</h2>
-          <ol><li>e4 c6</li><li>d4 d5</li><li>Nc3 dxe4</li></ol>
-          <a href="#">Завантажити PGN</a></section>
-        <p><button class="btn" type="button">Нова гра</button> <button class="btn" type="button">Здатися</button> <button class="btn" type="button">Реванш</button></p>
-        <aside aria-labelledby="ath"><h2 id="ath">Афіна</h2><p>Ферзь. Богиня мудрості й стратегії. Перемагає не силою, а розрахунком, тому й веде найсильнішу фігуру на дошці.</p></aside>
-      </div>
-    </div>
+
+    <section aria-labelledby="players">
+      <h2 id="players">Гравці</h2>
+      <table>
+        <caption>Учасники та годинники</caption>
+        <thead><tr><th scope="col">Колір</th><th scope="col">Гравець</th><th scope="col">Час</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Чорні</th><td>Гість</td><td><time datetime="PT9M42S">9:42</time></td></tr>
+          <tr><th scope="row">Білі</th><td>Гість</td><td><time datetime="PT9M31S">9:31</time></td></tr>
+        </tbody>
+      </table>
+      <p>Зараз ходять: білі.</p>
+    </section>
+
+    <section aria-labelledby="board">
+      <h2 id="board">Дошка</h2>
+      <figure>
+        <table>
+          <thead><tr><td></td><th scope="col">a</th><th scope="col">b</th><th scope="col">c</th><th scope="col">d</th><th scope="col">e</th><th scope="col">f</th><th scope="col">g</th><th scope="col">h</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">8</th><td><span title="чорна тура">♜</span></td><td></td><td><span title="чорний слон">♝</span></td><td><span title="чорний ферзь">♛</span></td><td><span title="чорний король">♚</span></td><td><span title="чорний слон">♝</span></td><td><span title="чорний кінь">♞</span></td><td><span title="чорна тура">♜</span></td></tr>
+            <tr><th scope="row">7</th><td><span title="чорний пішак">♟</span></td><td><span title="чорний пішак">♟</span></td><td><span title="чорний пішак">♟</span></td><td><span title="чорний пішак">♟</span></td><td></td><td><span title="чорний пішак">♟</span></td><td><span title="чорний пішак">♟</span></td><td><span title="чорний пішак">♟</span></td></tr>
+            <tr><th scope="row">6</th><td></td><td></td><td><span title="чорний кінь">♞</span></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><th scope="row">5</th><td></td><td></td><td></td><td></td><td><span title="чорний пішак">♟</span></td><td></td><td></td><td></td></tr>
+            <tr><th scope="row">4</th><td></td><td></td><td></td><td></td><td><span title="білий пішак">♙</span></td><td></td><td></td><td></td></tr>
+            <tr><th scope="row">3</th><td></td><td></td><td></td><td></td><td></td><td><span title="білий кінь">♘</span></td><td></td><td></td></tr>
+            <tr><th scope="row">2</th><td><span title="білий пішак">♙</span></td><td><span title="білий пішак">♙</span></td><td><span title="білий пішак">♙</span></td><td><span title="білий пішак">♙</span></td><td></td><td><span title="білий пішак">♙</span></td><td><span title="білий пішак">♙</span></td><td><span title="білий пішак">♙</span></td></tr>
+            <tr><th scope="row">1</th><td><span title="біла тура">♖</span></td><td><span title="білий кінь">♘</span></td><td><span title="білий слон">♗</span></td><td><span title="білий ферзь">♕</span></td><td><span title="білий король">♔</span></td><td><span title="білий слон">♗</span></td><td></td><td><span title="біла тура">♖</span></td></tr>
+          </tbody>
+        </table>
+        <figcaption>Шахова дошка: позиція після ходів 1. e4 e5 2. Nf3 Nc6. Білі: король e1, ферзь d1, тури a1 і h1, слони c1 і f1, коні b1 та f3, пішаки a2–d2, e4, f2–h2.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="move-h">
+      <h2 id="move-h">Зробити хід</h2>
+      <form action="game.html" method="get">
+        <p>
+          <label for="move">Ваш хід (наприклад, Bc4)</label><br>
+          <input type="text" id="move" name="move" required maxlength="8" autocomplete="off">
+          <button type="submit">Зробити хід</button>
+        </p>
+      </form>
+    </section>
+
+    <section aria-labelledby="moves">
+      <h2 id="moves">Ходи</h2>
+      <ol>
+        <li>e4 e5</li>
+        <li>Nf3 Nc6</li>
+      </ol>
+      <p><a href="#moves">Завантажити партію (PGN)</a></p>
+    </section>
+
+    <section aria-labelledby="actions">
+      <h2 id="actions">Керування партією</h2>
+      <p>
+        <button type="button">Запропонувати нічию</button>
+        <button type="button">Здатися</button>
+        <button type="button">Перевернути дошку</button>
+        <button type="button">Реванш</button>
+        <button type="button">Нова гра</button>
+      </p>
+      <p><a href="create-game.html">Створити іншу партію</a></p>
+    </section>
+
+    <aside aria-labelledby="ref">
+      <h2 id="ref">Міфологічна довідка: кінь</h2>
+      <h3>Пегас</h3>
+      <p>Крилатий кінь, народжений із крові Медузи Горгони. Лише кінь на дошці, як і Пегас, перестрибує перешкоди. Останній хід: <strong>2… Nc6</strong>.</p>
+      <p><a href="heroes.html">Усі герої дошки</a></p>
+    </aside>
   </main>
   <footer>
-    <p>Pallas’ Gambit: онлайн-шахи у світі давньогрецької міфології. Зв’язок: <a href="mailto:lizademed@gmail.com">lizademed@gmail.com</a></p>
-    <nav aria-label="Додаткове меню"><a href="404.html">Сторінка помилки</a></nav>
+    <nav aria-label="Карта сайту">
+      <h2>Сторінки сайту</h2>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="create-game.html">Створити партію</a></li>
+        <li><a href="game.html">Гра</a></li>
+        <li><a href="learn.html">Навчання</a></li>
+        <li><a href="level.html">Рівень</a></li>
+        <li><a href="heroes.html">Герої</a></li>
+        <li><a href="progress.html">Мій прогрес</a></li>
+        <li><a href="404.html">Сторінка помилки</a></li>
+      </ul>
+    </nav>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Контакти</h2>
+      <address>Зв’язок з автором: <a href="mailto:lizademed@gmail.com">lizademed@gmail.com</a></address>
+    </section>
+    <p><small>© 2026 Pallas’ Gambit. Навчальний проєкт.</small></p>
   </footer>
 </body>
 </html>
